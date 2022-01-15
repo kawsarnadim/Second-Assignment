@@ -208,8 +208,8 @@ hr{
  }   
  
  /* media query for tab */
- 
- @media only screen and (max-width: 992px){
+
+ @media only screen and (min-width:700px) and (max-width: 992px) {
     .brand-logo{
         display: none;
     }
