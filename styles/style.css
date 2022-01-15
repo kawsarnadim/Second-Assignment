@@ -1,5 +1,6 @@
 /* font family */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
 main{
     margin: 10px;
 }
@@ -8,7 +9,7 @@ body{
     background: #FFFFFF;
 
 }
-/* header style */
+/* header style start */
 header > nav {
     display: flex;
     justify-content:space-around;
@@ -24,8 +25,9 @@ nav > span > a{
  font-size: 20px;   
  padding-left: 10px;
 }
+/* header style end */
 
-/* Influencer style */
+/* Influencer style start*/
 .influencers {
     display: flex;
     justify-content: space-evenly;
@@ -65,7 +67,10 @@ height: 270px;
     transform: scale(1.3);
     transition: 3s ease;
 }
-/* brand logo */
+
+/* influencer style end */
+
+/* brand logo start */
 .brand-logo{
     background: #FFFFFF;
     margin:70px 150px;
@@ -74,10 +79,9 @@ height: 270px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 100px;
-
-  
+    margin: 100px; 
 }
+ /* brand logo end */
 
  /* collections style */
  .collection-container{
@@ -121,6 +125,7 @@ height: 270px;
     text-align: right;
     padding-top: 20px;
  }
+ /* collection style end */
 
  /* blogger section start */
 .bloggers-container{
@@ -201,3 +206,14 @@ hr{
 }
      
  }   
+ 
+ /* media query for tab */
+ 
+ @media only screen and (max-width: 992px){
+    .brand-logo{
+        display: none;
+    }
+    .collections, .media-blogger{
+        grid-template-columns: repeat(2, 1fr);
+}
+ }
